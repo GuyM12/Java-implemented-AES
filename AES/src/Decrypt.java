@@ -163,37 +163,4 @@ public class Decrypt {
             }
         }
     }
-
-    /*private void reverseMixColumns() {
-        byte[][] byteInput = new byte[input.length][input.length];
-        mixColumn mixColumn = new mixColumn(true);
-        for (int i = 0; i < input.length; i++) { //Making the byte array of the input
-            for (int j = 0; j < input[i].length; j++) {
-                byteInput[i][j] = (byte) Integer.parseInt(input[i][j], 16);
-
-            }
-        }
-        byteInput = mixColumn.mixColumn(byteInput);
-
-        for (int i = 0; i < byteInput.length; i++) { //Updating input.
-            for (int j = 0; j < byteInput[i].length; j++) {
-                input[i][j] = Integer.toString(((int) byteInput[i][j]), 16);
-            }
-        }
-    }*/
-
-    /*public void Decrypt() {
-        addRoundKey(keyTransform.length - 1);
-        reverseShiftRows();
-        reversesubBytes();
-        for (int i = 0; i < 9; i++) {
-            addRoundKey(keyTransform.length - 2 - i);
-            reverseMixColumns();
-            reverseShiftRows();
-            reversesubBytes();
-        }
-        addRoundKey(0);
-        System.out.println(hexArrayToAscii(input));
-    }
-*/
 }
